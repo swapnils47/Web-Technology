@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./imp.css">
+    <style>
+        /* second priority is given to internal css if inline is not present */
+        h1{
+            /* to set the priority */
+            color: red !important;  
+        }
+    </style>
+</head>
+<body>
+    <!-- first priority always given to inline css -->
+    <h1 style="color:yellow ;">THIS IS HEADING</h1>
+</body>
+</html>

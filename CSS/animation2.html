@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 50%;
+            animation-name: slider;
+            animation-duration: 3sec;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes slider{
+            from{
+                width: 100px;
+                background-color: red;
+                overflow: scroll;
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+                width: 400px;
+                background-color: yellow;
+                border-radius: 50%;
+                overflow: scroll;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur nobis tenetur nihil a sapiente
+        excepturi tempora iusto, et placeat labore temporibus. Nisi expedita optio tenetur? Dolorem, labore laboriosam
+        voluptate, molestiae expedita delectus doloribus deleniti id dolores reprehenderit impedit, temporibus optio!
+        Voluptatem veniam ratione perferendis magni, obcaecati rem necessitatibus doloribus.</div>
+</body>
+
+</html>

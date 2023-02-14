@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="gangubai"
+        str[1]="b"
+        // gbngubai
+        console.log(str);
+
+        // by using new keyword
+        let str1=new String("hello")
+        console.log(typeof str1);
+        console.log(str1);
+        str1="bye"
+        console.log(str1);
+
+        // by using single quote
+        let str6='gangubai'
+        console.log(str6);
+
+        // by using backtick
+        let str7=`gangubai`
+        console.log(str7);
+
+
+        // string methods
+        // length=it is used to check the length of string.
+         let str3="length"
+         console.log(str3.length);
+
+
+        //  toUpperCase()=it is used to turn string into lowercase to uppercase
+        let str4="uppercase"
+        console.log(str4.toUpperCase());
+
+        // toLowerCase()=it is used to turn string uppercase to lowercase
+        let str5="LOWERCASE"
+        console.log(str5.toLowerCase());
+
+        // slice(start index,last index)  =  it is used to splits the string into multiple fragments
+        let  str8="javascript"
+        console.log(str8.length);
+        console.log(str8.slice(2,6));
+        console.log(str8.slice(-5));
+
+        // concat()
+
+        let str9="string1"
+        let str10="string2"
+        console.log(str9+str10); //string1string2
+        console.log(str9.concat(str10));//string1string2
+
+        // charAt()= it is used to check which character is present at particular character
+        let str11="charAt"
+        console.log(str11.charAt(2));//a
+
+        let str12="charCodeAt"
+        console.log(str12.charCodeAt(2));
+
+        // repeat()=it is used to repeat the string
+        let str13="repeat"
+        console.log((str13.repeat(5)));
+        console.log(str13[2].repeat(6));
+
+        // replace()=it is used to replace the string
+        let str14="mumbai to goa"
+        console.log(str14.replace("mumbai","pune"));
+        console.log(str14); //pune to goa
+
+        // startwith()= it is used to check whether the index start with specific
+        // index(value) or not, if yes means it will return us true or else false
+
+
+        let str15="startwith"
+        console.log(str15.startsWith("s"))
+
+        // endswith()= it is used to check whether the index end with specific
+        // index(value) or not, if yes means it will return us true or else false
+        let str16="endswith"
+        console.log(str16.endsWith("s"));
+
+        // indexof()= it is used to check the index
+
+        let str17="indexof"
+        console.log(str17.indexOf("e"));//3
+
+        // includes()= it is used to check the value is present or not
+        let str18="includes"
+        console.log(str18.includes("a"));//false
+
+        // substr()= 
+        let str19="substring"
+        console.log(str19.substring(2,6));
+
+        // splits
+
+        let str20="splits"
+        let str21="amar akbar"
+        console.log(str20.split(""));
+        console.log(str21.split(" "));
+
+        // strim()
+        let str22=" trim "
+        console.log(str22);
+        console.log(str22.length);
+        console.log(str22.trim());
+        console.log(str22.trimEnd());
+        console.log(str22.trimStart());
+    </script>
+</body>
+</html>

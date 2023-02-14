@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1{
+            background-color: blue;
+            color: white;
+        }
+        .t2{
+            background-color: red;
+        }
+        .t3{
+            background-color: lightcoral;
+        }
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 2px;
+    
+        }
+        #tf{
+            margin: 0 auto;
+            margin-top: 400px;
+            border: 1px solid;
+            border-collapse: collapse;
+            box-shadow: 4px 5px 6px ;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <table id="tf" border="1px solid">
+            
+                <tr>
+                    
+                    <th class="t1" colspan="2">Subject</th>
+                    <!-- <td></td> -->
+                    <td class="t1">John Doe</td>
+                    <td class="t1">Mirium Luther</td>
+                
+                </tr>
+            
+            <tr>
+                <th rowspan="2">Biology</th>
+                <td class="t2">Practical</td>
+                <td class="t3">A</td>
+                <td class="t2">A</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td class="t3">Theory</td>
+                <td class="t2">A+</td>
+                <td class="t3">A</td>
+            </tr>
+            <tr>
+                <th class="t2" rowspan="2">Chemistry</th>
+                <td>Practical</td>
+                <td class="t3">B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td class="t3">Theory</td>
+                <td>A</td>
+                <td class="t3">C+</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Physics</th>
+                <td class="t2">Practical</td>
+                <td class="t3">A</td>
+                <td class="t2">A</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td class="t3">Theory</td>
+                <td class="t2">A-</td>
+                <td class="t3">A-</td>
+            </tr>
+        </table>
+   
+</body>
+
+</html>

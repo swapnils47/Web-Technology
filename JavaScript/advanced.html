@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let adv={
+            adhar:{
+                name:"ranu mandal",
+                age:66,
+            }
+        }
+        console.log(adv.adhar);
+        // update existing pair
+        adv.adhar.name="monica"
+        console.log(adv.adhar);
+        // adding new pair
+        adv.adhar1={
+            name:"cr7",
+            wife:{
+                name:"gangubai",
+                age:23
+            }
+
+        }
+        console.log(adv);
+        adv.adhar1.age=36
+        console.log(adv.adhar1);
+        console.log(adv.adhar1.wife.name);
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">ENTER YOUR FIRST DIGIT</label>
+    <input type="text" name="" id="ip1">
+    <br>
+    <label for="">ENTER YOUR SECOND DIGIT</label>
+    <input type="text" name="" id="ip2">
+    <br>
+    <p id="print"></p>
+    <button onclick="getAdd()">ADD</button>
+    <button onclick="getSub()">Substract</button>
+    <button onclick="getMul()">Multiply</button>
+    <button onclick="getDiv()">Divide</button>
+    <script>
+        function getAdd() {
+            let num1=Number(document.getElementById("ip1").value);
+            let num2=Number(document.getElementById("ip2").value);
+
+            let add=num1+num2
+            console.log(add);
+            let pri=document.getElementById("print")
+            pri.innerHTML="addition is:"+add
+            pri.style.color="red"
+        }
+        function getSub(){
+            let num1=Number(document.getElementById("ip1").value);
+            let num2=Number(document.getElementById("ip2").value);
+
+            let sub=num1-num2
+            console.log(sub);
+            let pri=document.getElementById("print")
+            pri.innerHTML="substraction is:"+sub
+            pri.style.color="blue"
+        }
+        function getMul() {
+            let num1=Number(document.getElementById("ip1").value);
+            let num2=Number(document.getElementById("ip2").value);
+
+            let mul=num1*num2
+            console.log(mul);
+            let pri=document.getElementById("print")
+            pri.innerHTML="multiplication is:"+mul
+            pri.style.color="green"
+        }
+        function getDiv() {
+            let num1=Number(document.getElementById("ip1").value);
+            let num2=Number(document.getElementById("ip2").value);
+
+            let div=num1/num2
+            console.log(div);
+            let pri=document.getElementById("print")
+            pri.innerHTML="division is:"+div
+            pri.style.color="black"
+        }
+        
+    </script>
+</body>
+</html>

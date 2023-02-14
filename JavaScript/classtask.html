@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 300px;
+            width: 400px;
+            background-color: lightgrey;
+            /* border: 1px solid; */
+            margin: auto;
+            margin-top: 200px;
+        }
+        .box{
+            width: 250px;
+            /* border: 1px solid; */
+            margin: auto;
+        }
+        .box1{
+            width: 250px;
+            height: 20px;
+        }
+        #submit{
+            /* height: 30px;
+            width: 30px; */
+            /* background-color: green; */
+            margin: auto;
+            
+        }
+        #sub1{
+            background-color:green;
+            border-radius: 20px;
+            height: 30px;
+            width: 60px;
+            color: white;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="box">
+            <p><b>First Name</b></p>
+            <input id="name" class="box1" type="text" placeholder="Your Name.." >
+            <br>
+        </div>
+        <div class="box">
+            <p><b>Last Name </b></p>
+            <input id="lastname" class="box1" type="text" placeholder="Your Last Name..">
+            <br>
+        </div>
+        <div class="box">
+            <p><b>Country</b></p>
+            <select class="box1" name="" id="info" >
+                <option value="USA">USA</option>
+                <option value="IND">IND</option>
+                <option value="AUS">AUS</option>
+                <option value="RUS">RUS</option>
+            </select>
+        </div>
+        <div class="box" id="submit" onclick="getsub()">
+            <br>
+            <button id="sub1" type="submit" value="submit">Submit</button>
+        </div>
+    </div>
+    <div class="box">
+        <p id="print1"></p>
+        <p id="print2"></p>
+        <p id="print3"></p>
+    </div>
+    <script>
+        function getsub() {
+            let ele1=document.getElementById("name").value
+            let ele2=document.getElementById("lastname").value
+            let ele3=document.getElementById("info").value
+            let ele4=document.getElementById("print1")
+            let ele5=document.getElementById("print2")
+            let ele6=document.getElementById("print3")
+            ele4.innerHTML="First Name is:"  +ele1
+            ele5.innerHTML="Last Name is:"  +ele2
+            ele6.innerHTML="Your Country is:"  +ele3
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={name:"vicky"}
+        //  add : it is used to add the new element
+        // obj.age=23;
+        // console.log(obj);
+        // delete : this method used to delete an element
+        // delete obj.name
+        // console.log(obj);
+        // Values: it is used to fetch values of an object
+        console.log(Object.values(obj));
+        // keys: it is used to fetch keys of an object
+        console.log(Object.keys(obj)); 
+        // entries : it is used to convert object into an arrays
+        console.log(Object.entries(obj));
+        // Seal:it is used to restrict the object , we cant add new element but we can mdify existing one
+        console.log(Object.seal(obj));
+        obj.prof="singer";
+        console.log(obj);
+        obj.name="jay"
+        console.log(obj);
+        // freeze: it is used to freeze the object,we cant modify
+        console.log(Object.freeze(obj));
+        obj.name="viru"
+        console.log(obj);
+
+        // assign: it is used to merged the object
+        let mobile1={company:"samsung",price:1200}
+        let mobile2={make:"germany",rom:128}
+        console.log(Object.assign(mobile1,mobile2));
+
+    </script>
+</body>
+</html>
